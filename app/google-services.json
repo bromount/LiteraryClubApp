@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "341615630634",
+    "firebase_url": "https://vec-literary-club.firebaseio.com",
+    "project_id": "vec-literary-club",
+    "storage_bucket": "vec-literary-club.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:341615630634:android:5108f8c9ee4550779ca653",
+        "android_client_info": {
+          "package_name": "com.example.VecLiteraryClubApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "341615630634-45r2pph0nq9iu7pt1a09cuiabhst9b4t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.VecLiteraryClubApp",
+            "certificate_hash": "aaf7cb700507b51ec28c791fb365e641ef91c834"
+          }
+        },
+        {
+          "client_id": "341615630634-jfvbogjlpeskj27jk3m0u1n9h6qnamo3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtLn7NOzspVMU6zRCcKvTeadWy86SAJJI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "341615630634-jfvbogjlpeskj27jk3m0u1n9h6qnamo3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

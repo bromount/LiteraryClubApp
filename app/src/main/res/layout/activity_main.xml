@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Drawer"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:openDrawer="start"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        layout="@layout/activity_main_layout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/NavView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="252dp"
+        tools:layout_editor_absoluteY="305dp"
+        app:headerLayout="@layout/profile_info_navbar"
+        app:menu="@menu/nav_view_list"
+        android:layout_gravity="start" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

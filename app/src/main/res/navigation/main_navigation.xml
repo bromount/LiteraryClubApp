@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/HomeFrag">
+
+    <fragment
+        android:id="@+id/StudFrag"
+        android:label="StudentFragment"
+        tools:layout="@layout/student_fragment"
+        android:name="com.example.VecLiteraryClubApp.StudentClass" />
+    <fragment
+        android:id="@+id/HomeFrag"
+        android:label="HomeFragment"
+        tools:layout="@layout/home_fragment"
+        android:name="com.example.VecLiteraryClubApp.HomeClass" />
+    <fragment
+        android:id="@+id/EventFrag"
+        android:label="EventFragment"
+        tools:layout="@layout/events_fragment"
+        android:name="com.example.VecLiteraryClubApp.EventClass" />
+    <fragment
+        android:id="@+id/GallFrag"
+        android:label="GalleryFragment"
+        tools:layout="@layout/gallery_fragment"
+        android:name="com.example.VecLiteraryClubApp.GalleryClass" />
+
+</navigation>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen"
+    android:background="#000000">
+
+
+    <ImageView
+        android:id="@+id/SplashBack"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/splash_back"
+        android:alpha="0.5" />
+
+    <ImageView
+        android:id="@+id/SplashLogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="500px"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        android:scaleType="fitCenter"
+        android:src="@drawable/re_res_alpha"
+        android:alpha="1" />
+
+    <TextView
+        android:id="@+id/SplashText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        android:text="LITERARY CLUB APP"
+        android:textColor="#FFFFFF"
+        android:textSize="84px"
+        android:alpha="1"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-condensed-medium" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

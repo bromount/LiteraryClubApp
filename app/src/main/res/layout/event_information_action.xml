@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/event_information_action_admin"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:visibility="visible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.015"
+                android:textSize="24sp"
+                android:text="Actions"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#001261"
+                android:textAlignment="center"
+                android:paddingHorizontal="32dp"
+                android:paddingVertical="8dp"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:singleLine="true" />
+
+            <CheckBox
+                android:id="@+id/event_information_reg_enabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.35"
+                android:textSize="18sp"
+                android:text="Enable registrations"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#393939"
+                android:layout_marginHorizontal="64dp"
+                android:checked="true"
+                android:buttonTint="#001261" />
+
+            <RadioGroup
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:id="@+id/event_information_state_group"
+                android:checkedButton="@id/event_information_state_upcoming"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/event_information_state_upcoming"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0"
+                    app:layout_constraintHorizontal_bias="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Upcoming"
+                    android:textAlignment="viewStart"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="#393939"
+                    android:buttonTint="#001261"
+                    android:layout_marginHorizontal="4dp" />
+
+                <RadioButton
+                    android:id="@+id/event_information_state_ongoing"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Ongoing"
+                    android:textAlignment="viewStart"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="#393939"
+                    android:buttonTint="#001261"
+                    android:layout_marginHorizontal="4dp" />
+
+                <RadioButton
+                    android:id="@+id/event_information_state_complete"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0"
+                    app:layout_constraintHorizontal_bias="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Complete"
+                    android:textAlignment="viewStart"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="#393939"
+                    android:buttonTint="#001261"
+                    android:layout_marginHorizontal="4dp" />
+
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/event_information_stats"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintVertical_bias="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="64dp"
+                android:textSize="16sp"
+                android:background="#001261"
+                android:text="VIEW STATISTICS"
+                android:textColor="#FFFFFF" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/event_information_action_stud_1"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:visibility="visible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.1"
+                android:textSize="24sp"
+                android:text="Actions"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#001261"
+                android:textAlignment="center"
+                android:paddingHorizontal="32dp"
+                android:paddingVertical="8dp"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:singleLine="true" />
+
+
+            <Button
+                android:id="@+id/event_information_register_1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintVertical_bias="0.5"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="64dp"
+                android:textSize="16sp"
+                android:background="#39C039"
+                android:text="REGISTER"
+                android:textColor="#FFFFFF" />
+
+
+            <Button
+                android:id="@+id/event_information_attend_1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintVertical_bias="0.85"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="64dp"
+                android:textSize="16sp"
+                android:background="#001261"
+                android:text="GO TO FORM"
+                android:textColor="#FFFFFF" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/event_information_action_stud_2"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:visibility="invisible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.2"
+                android:textSize="24sp"
+                android:text="Actions"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#001261"
+                android:textAlignment="center"
+                android:paddingHorizontal="32dp"
+                android:paddingVertical="8dp"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:singleLine="true" />
+
+
+            <Button
+                android:id="@+id/event_information_register_2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintVertical_bias="0.7"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="64dp"
+                android:textSize="16sp"
+                android:background="#39C039"
+                android:text="REGISTER"
+                android:textColor="#FFFFFF" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

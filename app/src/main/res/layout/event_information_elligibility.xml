@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="390dp"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="16dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.05"
+            android:textSize="24sp"
+            android:text="Elligibility"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#001261"
+            android:textAlignment="center"
+            android:paddingHorizontal="32dp"
+            android:paddingVertical="8dp"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:singleLine="true" />
+
+
+        <androidx.core.widget.NestedScrollView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layout_constraintVertical_bias="0.95"
+            android:layout_margin="8dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical"
+            android:verticalScrollbarPosition="right"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbarThumbVertical="@drawable/scroll"
+            android:paddingHorizontal="2dp">
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginVertical="8dp"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:text="YEARS"
+                            android:textAlignment="gravity"
+                            android:textColor="#001261"
+                            android:textSize="24dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.05" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="32dp"
+                            android:background="#757575"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.25" />
+
+                        <CheckBox
+                            android:id="@+id/first"
+                            android:layout_width="200dp"
+                            android:layout_height="36dp"
+                            android:layout_marginHorizontal="64dp"
+                            android:buttonTint="#001261"
+                            android:checked="true"
+                            android:text="1ST YEAR STUDENTS"
+                            android:textAlignment="center"
+                            android:textColor="#111111"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.35" />
+
+                        <CheckBox
+                            android:id="@+id/second"
+                            android:layout_width="200dp"
+                            android:layout_height="36dp"
+                            android:layout_marginHorizontal="64dp"
+                            android:buttonTint="#001261"
+                            android:checked="true"
+                            android:text="2ND YEAR STUDENTS"
+                            android:textAlignment="center"
+                            android:textColor="#111111"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.55" />
+
+
+                        <CheckBox
+                            android:id="@+id/third"
+                            android:layout_width="200dp"
+                            android:layout_height="36dp"
+                            android:layout_marginHorizontal="64dp"
+                            android:buttonTint="#001261"
+                            android:checked="true"
+                            android:text="3RD YEAR STUDENTS"
+                            android:textAlignment="center"
+                            android:textColor="#111111"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.75" />
+
+                        <CheckBox
+                            android:id="@+id/fourth"
+                            android:layout_width="200dp"
+                            android:layout_height="36dp"
+                            android:layout_marginHorizontal="64dp"
+                            android:buttonTint="#001261"
+                            android:checked="true"
+                            android:text="4TH YEAR STUDENTS"
+                            android:textAlignment="center"
+                            android:textColor="#111111"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.95" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginVertical="8dp"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:text="COURSES"
+                            android:textAlignment="gravity"
+                            android:textColor="#001261"
+                            android:textSize="24dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.05" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="32dp"
+                            android:background="#757575"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.25" />
+
+                        <CheckBox
+                            android:id="@+id/CSE"
+                            android:layout_width="100dp"
+                            android:layout_height="36dp"
+                            android:layout_marginHorizontal="16dp"
+                            android:buttonTint="#001261"
+                            android:checked="true"
+                            android:text="CSE"
+                            android:textAlignment="center"
+                            android:textColor="#111111"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.35" />
+
+                        <CheckBox
+                            android:id="@+id/ECE"
+                            android:layout_width="100dp"
+                            android:layout_height="36dp"
+                            android:layout_marginHorizontal="16dp"
+                            android:buttonTint="#001261"
+                            android:checked="true"
+                            android:text="ECE"
+                            android:textAlignment="center"
+                            android:textColor="#111111"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.55" />
+
+
+                        <CheckBox
+                            android:id="@+id/EEE"
+                            android:layout_width="100dp"
+                            android:layout_height="36dp"
+                            android:layout_marginHorizontal="16dp"
+                            android:buttonTint="#001261"
+                            android:checked="true"
+                            android:text="EEE"
+                            android:textAlignment="center"
+                            android:textColor="#111111"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.75" />
+
+                        <CheckBox
+                            android:id="@+id/IT"
+                            android:layout_width="100dp"
+                            android:layout_height="36dp"
+                            android:layout_marginHorizontal="16dp"
+                            android:buttonTint="#001261"
+                            android:checked="true"
+                            android:text="IT"
+                            android:textAlignment="center"
+                            android:textColor="#111111"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.95" />
+
+
+                        <CheckBox
+                            android:id="@+id/MECH"
+                            android:layout_width="100dp"
+                            android:layout_height="36dp"
+                            android:layout_marginHorizontal="16dp"
+                            android:buttonTint="#001261"
+                            android:checked="true"
+                            android:text="MECH"
+                            android:textAlignment="center"
+                            android:textColor="#111111"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="1"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.35" />
+
+                        <CheckBox
+                            android:id="@+id/AUTO"
+                            android:layout_width="100dp"
+                            android:layout_height="36dp"
+                            android:layout_marginHorizontal="16dp"
+                            android:buttonTint="#001261"
+                            android:checked="true"
+                            android:text="AUTO"
+                            android:textAlignment="center"
+                            android:textColor="#111111"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="1"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.55" />
+
+
+                        <CheckBox
+                            android:id="@+id/EIE"
+                            android:layout_width="100dp"
+                            android:layout_height="36dp"
+                            android:layout_marginHorizontal="16dp"
+                            android:buttonTint="#001261"
+                            android:checked="true"
+                            android:text="EIE"
+                            android:textAlignment="center"
+                            android:textColor="#111111"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="1"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.75" />
+
+                        <CheckBox
+                            android:id="@+id/CIVIL"
+                            android:layout_width="100dp"
+                            android:layout_height="36dp"
+                            android:layout_marginHorizontal="16dp"
+                            android:buttonTint="#001261"
+                            android:checked="true"
+                            android:text="CIVIL"
+                            android:textAlignment="center"
+                            android:textColor="#111111"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="1"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.95" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginVertical="8dp"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:text="GENDERS"
+                            android:textAlignment="gravity"
+                            android:textColor="#001261"
+                            android:textSize="24dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.05" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="32dp"
+                            android:background="#757575"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.25" />
+
+                        <CheckBox
+                            android:id="@+id/male"
+                            android:layout_width="200dp"
+                            android:layout_height="36dp"
+                            android:layout_marginHorizontal="64dp"
+                            android:buttonTint="#001261"
+                            android:checked="true"
+                            android:text="MALE"
+                            android:textAlignment="center"
+                            android:textColor="#111111"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.45" />
+
+                        <CheckBox
+                            android:id="@+id/female"
+                            android:layout_width="200dp"
+                            android:layout_height="36dp"
+                            android:layout_marginHorizontal="64dp"
+                            android:buttonTint="#001261"
+                            android:checked="true"
+                            android:text="FEMALE"
+                            android:textAlignment="center"
+                            android:textColor="#111111"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.65" />
+
+
+                        <CheckBox
+                            android:id="@+id/non_binary"
+                            android:layout_width="200dp"
+                            android:layout_height="36dp"
+                            android:layout_marginHorizontal="64dp"
+                            android:buttonTint="#001261"
+                            android:checked="true"
+                            android:text="NON BINARY"
+                            android:textAlignment="center"
+                            android:textColor="#111111"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.85" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

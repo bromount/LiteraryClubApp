@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="10dp"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.015"
+                android:textSize="24sp"
+                android:text="Description"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#001261"
+                android:textAlignment="center"
+                android:paddingHorizontal="32dp"
+                android:paddingVertical="8dp"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:singleLine="true" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.7"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:fadeScrollbars="false"
+                android:scrollbars="vertical"
+                android:verticalScrollbarPosition="right"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbarThumbVertical="@drawable/scroll"
+                android:paddingHorizontal="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/event_information_form_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintVertical_bias="0.85"
+                        android:textSize="22sp"
+                        android:text="This space right here is where the description of the event is supposed to show up.\n\nIf you're an end user and are able to read this, then the app isn't functioning normally.\n\nTry reloading the app to see if it fixes itself. In case it doesn't, It is suggested that the user perform a sacrificial offering to our true lord and saviour @TwitterSupport.\n\nIt is recommended that one's first born child be offered as the sacrifice, however in case they've already been sacrificed, a second born child may serve as a stand-in.\n\nThis information bulletin is sponsored by BetterHelp. Have you ever thought of killing yourself? Maybe you should.\nGet 30% off on a 3 month subscription to BetterHelp by using promo code :\nВ чем разница"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:textColor="#393939"
+                        android:textAlignment="center"
+                        android:paddingHorizontal="4dp"
+                        android:paddingVertical="8dp"
+                        android:nestedScrollingEnabled="true" />
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="10dp"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.1"
+                android:textSize="24sp"
+                android:text="Scheduled Date"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#001261"
+                android:textAlignment="center"
+                android:paddingHorizontal="32dp"
+                android:paddingVertical="8dp"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/event_information_form_schedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.85"
+                android:textSize="22sp"
+                android:text="31 / 02 / 2020"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textColor="#393939"
+                android:textAlignment="center"
+                android:paddingHorizontal="32dp"
+                android:paddingVertical="8dp"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:singleLine="true" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="10dp"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.015"
+                android:textSize="24sp"
+                android:text="Instructions"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#001261"
+                android:textAlignment="center"
+                android:paddingHorizontal="32dp"
+                android:paddingVertical="8dp"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:singleLine="true" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.7"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:fadeScrollbars="false"
+                android:scrollbars="vertical"
+                android:verticalScrollbarPosition="right"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbarThumbVertical="@drawable/scroll"
+                android:paddingHorizontal="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintVertical_bias="0.85"
+                        android:textSize="22sp"
+                        android:text="Make sure that you're signed in to your google account on the current device.\n\nClick on the 'open form' button below after the event goes live. \n\n After filling the form, don't forget to click the submit button at the end of the form.\n\nForms that aren't submitted won't be considered."
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:textColor="#393939"
+                        android:textAlignment="center"
+                        android:paddingHorizontal="4dp"
+                        android:paddingVertical="8dp"
+                        android:nestedScrollingEnabled="true" />
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

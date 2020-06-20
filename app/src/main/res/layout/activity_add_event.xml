@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_event">
+
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:filterTouchesWhenObscured="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_crop">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0"
+                android:orientation="vertical">
+
+                <include layout="@layout/section_header_new_event" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardBackgroundColor="#FFFFFF"
+                    android:elevation="5dp"
+                    android:layout_marginVertical="8dp"
+                    android:layout_marginHorizontal="16dp">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Type of event : "
+                            android:textAlignment="gravity"
+                            android:gravity="center_vertical"
+                            android:textColor="#393939"
+                            android:paddingHorizontal="16dp"
+                            android:textSize="20dp" />
+
+                        <Spinner
+                            android:id="@+id/Event_Types"
+                            android:background="#001261"
+                            android:layout_width="120dp"
+                            android:layout_height="32dp"
+                            android:layout_marginHorizontal="4dp"
+                            android:dropDownWidth="match_parent"
+                            android:entries="@array/event_types"
+                            android:spinnerMode="dropdown"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0.9"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/add_event_constraint"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+
+                    <include
+                        android:id="@+id/event_venue_layout"
+                        layout="@layout/add_event_venue"
+                        android:visibility="visible" />
+
+                    <include
+                        android:id="@+id/event_form_layout"
+                        layout="@layout/add_event_form"
+                        android:visibility="invisible" />
+
+                    <include
+                        android:id="@+id/event_submit_layout"
+                        layout="@layout/add_event_submit"
+                        android:visibility="invisible" />
+
+                    <include
+                        android:id="@+id/event_construction_loli"
+                        layout="@layout/construction_loli"
+                        android:visibility="invisible" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/add_event_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:visibility="invisible"
+        app:cardBackgroundColor="#AA000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminateTint="#CC00FF"
+            android:indeterminateTintMode="multiply"
+            android:max="0"
+            android:progress="0"
+            android:progressTint="#400050"
+            android:scaleX="0.25"
+            android:scaleY="0.25" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

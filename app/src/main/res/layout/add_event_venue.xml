@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="1700dp"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="10dp"
+    android:layout_marginVertical="8dp"
+    android:layout_marginHorizontal="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintVertical_bias="0.01"
+            android:text="Create new venue event"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#001261"
+            android:textSize="28dp"
+            android:textAlignment="center" />
+
+        <View
+            android:id="@+id/divider8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#393939"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintVertical_bias="0.04"
+            android:layout_marginHorizontal="32dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintVertical_bias="0.05"
+            android:text="Event Name"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#001261"
+            android:textSize="22dp"
+            android:textAlignment="gravity"
+            android:gravity="center" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintVertical_bias="0.08"
+            android:layout_marginHorizontal="16dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <EditText
+                android:id="@+id/venue_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintVertical_bias="1"
+                android:layout_marginHorizontal="32dp"
+                android:hint="Event Name"
+                android:textSize="22dp"
+                android:textColorHint="#999999"
+                android:textColor="#393939"
+                android:textAlignment="gravity"
+                android:gravity="center" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintVertical_bias="0.12"
+            android:text="Event Description"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#001261"
+            android:textSize="22dp"
+            android:textAlignment="gravity"
+            android:gravity="center" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintVertical_bias="0.17"
+            android:layout_marginHorizontal="16dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/venue_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="32dp"
+                        android:hint="Event Description"
+                        android:textSize="22dp"
+                        android:textColorHint="#999999"
+                        android:textColor="#393939"
+                        android:textAlignment="gravity"
+                        android:gravity="center_horizontal"
+                        android:nestedScrollingEnabled="true"
+                        android:isScrollContainer="true"
+                        android:text=""
+                        android:paddingHorizontal="4dp" />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintVertical_bias="0.31"
+            android:text="Event Venue"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#001261"
+            android:textSize="22dp"
+            android:textAlignment="gravity"
+            android:gravity="center" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintVertical_bias="0.34"
+            android:layout_marginHorizontal="16dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <EditText
+                android:id="@+id/venue_venue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintVertical_bias="1"
+                android:layout_marginHorizontal="32dp"
+                android:hint="Event Venue"
+                android:textSize="22dp"
+                android:textColorHint="#999999"
+                android:textColor="#393939"
+                android:textAlignment="gravity"
+                android:gravity="center" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintVertical_bias="0.39"
+            android:text="Scheduled Date"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#001261"
+            android:textSize="22dp"
+            android:textAlignment="gravity"
+            android:gravity="center" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintVertical_bias="0.42"
+            android:layout_marginHorizontal="16dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <EditText
+                android:id="@+id/venue_schedule"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintVertical_bias="1"
+                android:layout_marginHorizontal="32dp"
+                android:hint="Scheduled Date"
+                android:textSize="22dp"
+                android:textColorHint="#999999"
+                android:textColor="#393939"
+                android:textAlignment="gravity"
+                android:gravity="center"
+                android:inputType="date" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintVertical_bias="0.47"
+            android:text="Register By Date"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#001261"
+            android:textSize="22dp"
+            android:textAlignment="gravity"
+            android:gravity="center" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            android:layout_marginHorizontal="16dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <EditText
+                android:id="@+id/venue_registration"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintVertical_bias="1"
+                android:layout_marginHorizontal="32dp"
+                android:hint="Register By Date"
+                android:textSize="22dp"
+                android:textColorHint="#999999"
+                android:textColor="#393939"
+                android:textAlignment="gravity"
+                android:gravity="center"
+                android:inputType="date" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintVertical_bias="0.555"
+            android:text="Event Poster"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#001261"
+            android:textSize="22dp"
+            android:textAlignment="gravity"
+            android:gravity="center" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintVertical_bias="0.68"
+            android:layout_marginHorizontal="16dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <ImageView
+                android:id="@+id/venue_poster"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:src="@drawable/re_res_shadow" />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintVertical_bias="0.77"
+            android:text="Participation Requirements"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#001261"
+            android:textSize="22dp"
+            android:textAlignment="gravity"
+            android:gravity="center" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintVertical_bias="0.92"
+            android:layout_marginHorizontal="16dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginVertical="8dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintVertical_bias="0"
+                        app:cardCornerRadius="10dp"
+                        app:cardBackgroundColor="#FFFFFF">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintVertical_bias="0.05"
+                                android:text="YEARS"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textColor="#001261"
+                                android:textSize="24dp"
+                                android:textAlignment="gravity"
+                                android:gravity="center" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintVertical_bias="0.25"
+                                android:background="#757575"
+                                android:layout_marginHorizontal="32dp" />
+
+                            <CheckBox
+                                android:id="@+id/venue_first"
+                                android:layout_width="200dp"
+                                android:layout_height="36dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintVertical_bias="0.35"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                android:layout_marginHorizontal="64dp"
+                                android:text="1ST YEAR STUDENTS"
+                                android:textColor="#111111"
+                                android:textAlignment="center"
+                                android:checked="true"
+                                android:buttonTint="#001261" />
+
+                            <CheckBox
+                                android:id="@+id/venue_second"
+                                android:layout_width="200dp"
+                                android:layout_height="36dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintVertical_bias="0.55"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                android:layout_marginHorizontal="64dp"
+                                android:text="2ND YEAR STUDENTS"
+                                android:textColor="#111111"
+                                android:checked="true"
+                                android:buttonTint="#001261"
+                                android:textAlignment="center" />
+
+
+                            <CheckBox
+                                android:id="@+id/venue_third"
+                                android:layout_width="200dp"
+                                android:layout_height="36dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintVertical_bias="0.75"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                android:layout_marginHorizontal="64dp"
+                                android:text="3RD YEAR STUDENTS"
+                                android:textColor="#111111"
+                                android:textAlignment="center"
+                                android:checked="true"
+                                android:buttonTint="#001261" />
+
+                            <CheckBox
+                                android:id="@+id/venue_fourth"
+                                android:layout_width="200dp"
+                                android:layout_height="36dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintVertical_bias="0.95"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                android:layout_marginHorizontal="64dp"
+                                android:text="4TH YEAR STUDENTS"
+                                android:textColor="#111111"
+                                android:checked="true"
+                                android:buttonTint="#001261"
+                                android:textAlignment="center" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginVertical="8dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintVertical_bias="0"
+                        app:cardCornerRadius="10dp"
+                        app:cardBackgroundColor="#FFFFFF">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintVertical_bias="0.05"
+                                android:text="COURSES"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textColor="#001261"
+                                android:textSize="24dp"
+                                android:textAlignment="gravity"
+                                android:gravity="center" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintVertical_bias="0.25"
+                                android:background="#757575"
+                                android:layout_marginHorizontal="32dp" />
+
+                            <CheckBox
+                                android:id="@+id/venue_CSE"
+                                android:layout_width="100dp"
+                                android:layout_height="36dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintVertical_bias="0.35"
+                                app:layout_constraintHorizontal_bias="0"
+                                android:layout_marginHorizontal="16dp"
+                                android:text="CSE"
+                                android:textColor="#111111"
+                                android:textAlignment="center"
+                                android:checked="true"
+                                android:buttonTint="#001261" />
+
+                            <CheckBox
+                                android:id="@+id/venue_ECE"
+                                android:layout_width="100dp"
+                                android:layout_height="36dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintVertical_bias="0.55"
+                                app:layout_constraintHorizontal_bias="0"
+                                android:layout_marginHorizontal="16dp"
+                                android:text="ECE"
+                                android:textColor="#111111"
+                                android:checked="true"
+                                android:buttonTint="#001261"
+                                android:textAlignment="center" />
+
+
+                            <CheckBox
+                                android:layout_width="100dp"
+                                android:layout_height="36dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintVertical_bias="0.75"
+                                app:layout_constraintHorizontal_bias="0"
+                                android:layout_marginHorizontal="16dp"
+                                android:text="EEE"
+                                android:textColor="#111111"
+                                android:textAlignment="center"
+                                android:checked="true"
+                                android:buttonTint="#001261"
+                                android:id="@+id/venue_EEE" />
+
+                            <CheckBox
+                                android:layout_width="100dp"
+                                android:layout_height="36dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintVertical_bias="0.95"
+                                app:layout_constraintHorizontal_bias="0"
+                                android:layout_marginHorizontal="16dp"
+                                android:text="IT"
+                                android:textColor="#111111"
+                                android:checked="true"
+                                android:buttonTint="#001261"
+                                android:textAlignment="center"
+                                android:id="@+id/venue_IT" />
+
+
+                            <CheckBox
+                                android:layout_width="100dp"
+                                android:layout_height="36dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintVertical_bias="0.35"
+                                app:layout_constraintHorizontal_bias="1"
+                                android:layout_marginHorizontal="16dp"
+                                android:text="MECH"
+                                android:textColor="#111111"
+                                android:textAlignment="center"
+                                android:checked="true"
+                                android:buttonTint="#001261"
+                                android:id="@+id/venue_MECH" />
+
+                            <CheckBox
+                                android:layout_width="100dp"
+                                android:layout_height="36dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintVertical_bias="0.55"
+                                app:layout_constraintHorizontal_bias="1"
+                                android:layout_marginHorizontal="16dp"
+                                android:text="AUTO"
+                                android:textColor="#111111"
+                                android:checked="true"
+                                android:buttonTint="#001261"
+                                android:textAlignment="center"
+                                android:id="@+id/venue_AUTO" />
+
+
+                            <CheckBox
+                                android:layout_width="100dp"
+                                android:layout_height="36dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintVertical_bias="0.75"
+                                app:layout_constraintHorizontal_bias="1"
+                                android:layout_marginHorizontal="16dp"
+                                android:text="EIE"
+                                android:textColor="#111111"
+                                android:textAlignment="center"
+                                android:checked="true"
+                                android:buttonTint="#001261"
+                                android:id="@+id/venue_EIE" />
+
+                            <CheckBox
+                                android:layout_width="100dp"
+                                android:layout_height="36dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintVertical_bias="0.95"
+                                app:layout_constraintHorizontal_bias="1"
+                                android:layout_marginHorizontal="16dp"
+                                android:text="CIVIL"
+                                android:textColor="#111111"
+                                android:checked="true"
+                                android:buttonTint="#001261"
+                                android:textAlignment="center"
+                                android:id="@+id/venue_CIVIL" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginVertical="8dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintVertical_bias="0"
+                        app:cardCornerRadius="10dp"
+                        app:cardBackgroundColor="#FFFFFF">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintVertical_bias="0.05"
+                                android:text="GENDERS"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textColor="#001261"
+                                android:textSize="24dp"
+                                android:textAlignment="gravity"
+                                android:gravity="center" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintVertical_bias="0.25"
+                                android:background="#757575"
+                                android:layout_marginHorizontal="32dp" />
+
+                            <CheckBox
+                                android:layout_width="200dp"
+                                android:layout_height="36dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintVertical_bias="0.45"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                android:layout_marginHorizontal="64dp"
+                                android:text="MALE"
+                                android:textColor="#111111"
+                                android:textAlignment="center"
+                                android:checked="true"
+                                android:buttonTint="#001261"
+                                android:id="@+id/venue_male" />
+
+                            <CheckBox
+                                android:layout_width="200dp"
+                                android:layout_height="36dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintVertical_bias="0.65"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                android:layout_marginHorizontal="64dp"
+                                android:text="FEMALE"
+                                android:textColor="#111111"
+                                android:checked="true"
+                                android:buttonTint="#001261"
+                                android:textAlignment="center"
+                                android:id="@+id/venue_female" />
+
+
+                            <CheckBox
+                                android:layout_width="200dp"
+                                android:layout_height="36dp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintVertical_bias="0.85"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                android:layout_marginHorizontal="64dp"
+                                android:text="NON BINARY"
+                                android:textColor="#111111"
+                                android:textAlignment="center"
+                                android:checked="true"
+                                android:buttonTint="#001261"
+                                android:id="@+id/venue_non_binary" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/venue_submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintVertical_bias="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="48dp"
+            android:textSize="20dp"
+            android:background="#001261"
+            android:text="CREATE EVENT"
+            android:textColor="#FFFFFF"
+
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="years">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="courses">
+        <item>CSE</item>
+        <item>IT</item>
+        <item>ECE</item>
+        <item>MECH</item>
+        <item>AUTO</item>
+        <item>CIVIL</item>
+        <item>EEE</item>
+        <item>EIE</item>
+    </string-array>
+
+    <string-array name="genders">
+        <item>M</item>
+        <item>F</item>
+        <item>NB</item>
+    </string-array>
+
+    <string-array name="sections">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+    </string-array>
+
+    <string-array name="event_types">
+        <item>Venue</item>
+        <item>Submit</item>
+        <item>Form</item>
+    </string-array>
+
+    <string-array name="post_types">
+        <item>Text</item>
+        <item>Image</item>
+        <item>Webpage</item>
+    </string-array>
+
+</resources>

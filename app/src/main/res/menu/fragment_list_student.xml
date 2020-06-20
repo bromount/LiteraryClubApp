@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/HomeFrag"
+            android:title="HOME"
+            android:icon="@drawable/re_res_alpha_shadow_mini" />
+
+        <item
+            android:id="@+id/EventFrag"
+            android:title="EVENTS"
+            android:icon="@drawable/event_icon" />
+        <item
+            android:id="@+id/GallFrag"
+            android:title="FEED"
+            android:icon="@drawable/gallery_icon" />
+
+    </group>
+</menu>

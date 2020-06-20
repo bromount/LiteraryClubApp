@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.VecLiteraryClubApp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar">
+        <activity android:name=".Event_Statistics"></activity>
+        <activity android:name=".VIew_Image" />
+        <activity android:name=".form_answer" />
+        <activity android:name=".event_overview" />
+        <activity
+            android:name=".event_information"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".student_information"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".add_gallery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".add_event"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".about_all"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".about_app_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".about_gallery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".about_student"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".about_event"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".about_home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
